@@ -1,0 +1,120 @@
+body {
+  font-family: 'Manrope', sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --lihght-blue: #EBF0FA;
+  font-family: 'Pro Racing Slant', sans-serif;
+  line-height: 160%;
+  font-weight: 100;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1920px;
+  margin: auto;
+}
+
+.header img {
+  max-width: 100px;
+}
+
+.demo__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--lihght-blue);
+  border-radius: 0.5rem;
+}
+
+.demo__content {
+  padding-left: 72px;
+  max-width: 511px;
+}
+
+.demo__title {
+  color: #1F4284;
+  font-size: 1.88rem;
+  margin: 0;
+
+}
+
+.demo__subtitle {
+  line-height: 160%;
+  font-size: 1.0625rem;
+  color: #727272;
+  margin: 18px 0 36px;
+  font-weight: 100;
+}
+
+button {
+  background-color: #244C98;
+}
+
+.demo__btn {
+  width: 21.31rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 9999px;
+  font-size: 1.125rem;
+  padding: 16px 16px 16px 24px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.demo__image img {
+  max-width: 100%;
+}
+
+@media (max-width: 1480px) {
+  .demo__title {
+    font-size: 1.625rem;
+  }
+}
+
+@media (max-width: 1275px) {
+  .demo__container {
+    flex-direction: column;
+  }
+
+  .demo__content {
+    padding: 24px;
+    max-width: none;
+  }
+}
+
+
+@media (max-width: 850px) {
+  .demo__title {
+    font-size: 1.25rem;
+  }
+
+  .demo__subtitle {
+    margin: 18px 0 24px;
+  }
+
+  .demo__btn {
+    width: 16.313rem;
+    font-size: 0.938rem;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .demo__title {
+    font-size: 1.0625rem;
+  }
+}
+
+@media (max-width: 410px) {
+  .demo__btn {
+    width: 17.44rem;
+  }
+
+  .demo__subtitle {
+    margin: 14px 0 18px;
+  }
+}

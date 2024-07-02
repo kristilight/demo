@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Адаптивная Верстка</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="modal.css">
+  <link href="img/gear-svgrepo-com.svg" rel="icon" type="image/x-icon">
+</head>
+<body>
+<div class="demo">
+  <div class="wrapper">
+    <div class="demo__container">
+      <div class="demo__content">
+        <h1 class="demo__title">Демо-версия</h1>
+        <p class="demo__subtitle">За 18 лет деятельности было реализовано более 500 крупных, а также, не менее 2500
+          средних и малых проектов.
+          Используя знания и накопленный опыт мы можем предложить</p>
+        <button class="demo__btn" id="try-demo">
+          <span>Попробовать бесплатно</span>
+          <img src="img/arrow.png">
+        </button>
+      </div>
+      <picture class="demo__image">
+        <source srcset="img/demo-img-medium.png" media="(min-width: 1520px)">
+        <source srcset="img/demo-img-tablet.png" media="(min-width: 1275px)">
+        <source srcset="img/demo-img-small.png" media="(max-width: 420px)">
+        <img src="img/demo-img-large.png" alt="Gears">
+      </picture>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div id="dynamic-content"></div>
+  </div>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
